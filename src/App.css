@@ -1,16 +1,28 @@
 body {
   width: 100%;
-  background-color: rgb(216, 223, 230);
+  display: flex;
+  justify-content: center;
+  background-color: rgb(244, 249, 255);
+  align-items: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  left: 50%;
 }
 
 #calculator {
-  width: 50%;
+  width: 24rem;
   border: 1px solid rgb(39, 37, 37);
+  text-align: center;
+  margin-top: 8rem;
 }
 
 #inputVal {
-  width: 100%;
+  width: 22.8rem;
   background-color: rgb(144, 135, 135);
+  text-align: end;
+  padding: 0.55rem;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
 }
 
 #row1 {
@@ -49,4 +61,5 @@ body {
 #plus,
 #equalSign {
   background-color: rgb(237, 131, 31);
+  padding: 0.5rem;
 }

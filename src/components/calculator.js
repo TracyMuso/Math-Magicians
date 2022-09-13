@@ -6,7 +6,7 @@ export default class Calculator extends React.Component {
   render() {
     return (
       <div id="calculator">
-        <textarea type="text" id="inputVal" value="0" />
+        <input type="text" id="inputVal" value="0" />
         <div id="row1">
           <Button label="AC" id="clear" />
           <Button label="+/-" id="switchSign" />
