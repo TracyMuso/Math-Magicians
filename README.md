@@ -15,7 +15,7 @@
 
 ## Live Demo 
 
-Click here for the [live demo link](https://elfin-git.github.io/Math-Magicians/dist/)
+Click here for the [live demo link](https://elfin-git.github.io/Math-Magicians/build/)
 
 ## Getting Started
 
