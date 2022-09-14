@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 export default class Button extends React.Component {
   render() {
-    const { label, id } = this.props;
+    const { label, id, handleChange } = this.props;
     return (
-      <input type="button" value={label} id={id} />
+      <input type="button" id={id} value={label} onClick={handleChange} />
     );
   }
 }
@@ -14,4 +14,5 @@ export default class Button extends React.Component {
 Button.propTypes = {
   label: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
