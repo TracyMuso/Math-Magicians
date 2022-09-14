@@ -1,7 +1,9 @@
 /* eslint-disable import/prefer-default-export */
 import { operate } from './operation';
 
-const isNum = (item) => !!item.match(/[0-9]+/);
+function isNum(item) {
+  return !!item.match(/[0-9]+/);
+}
 
 export const calculate = (obj, btn) => {
   if (btn === 'AC') {
@@ -21,6 +23,7 @@ export const calculate = (obj, btn) => {
       if (obj.next && obj.next !== '0') {
         return { ...obj, next: obj.next + btn };
       }
+      return { ...obj, next: btn };
     }
     // update next and clear the value if there is no operation
     if (obj.next && obj.next !== '0') {
@@ -38,6 +41,15 @@ export const calculate = (obj, btn) => {
   if (btn === '.') {
     if (obj.next) {
       if (obj.next.includes('.')) {
+        return { ...obj };
+      }
+      return { ...obj, next: `${obj.next}.` };
+    }
+    if (obj.operation) {
+      return { ...obj, next: '0.' };
+    }
+    if (obj.total) {
+      if (obj.total.includes('.')) {
         return {};
       }
       return { ...obj, next: `${obj.total}.` };

@@ -7,31 +7,30 @@ export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      obj: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-      display: '',
+      total: null,
+      next: null,
+      operation: null,
+      display: 0,
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
-    const output = calculate(this.state, e.target.textContent);
-    this.setState(output);
+    const btn = e.target.value;
+    this.setState((prevState) => ({ ...calculate(prevState, btn) }), this.displayOutput);
+  }
+
+  displayOutput() {
+    const { total, next } = this.state;
+    if (!next && !total) this.setState({ display: '0' });
+    else this.setState({ display: next ?? total });
   }
 
   render() {
-    const { total, next, operation } = this.state;
+    const { display } = this.state;
     return (
       <div id="calculator">
-        <div id="inputVal">
-          {total}
-          {' '}
-          {operation}
-          {' '}
-          {next}
-        </div>
+        <div id="inputVal">{ display }</div>
         <div id="row1">
           <Button label="AC" id="clear" handleChange={this.handleChange} />
           <Button label="+/-" id="switchSign" handleChange={this.handleChange} />
