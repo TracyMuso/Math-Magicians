@@ -18,7 +18,8 @@ const Calculator = () => {
 
   const handleChange = (e) => {
     const btn = e.target.value;
-    setObj((oldState) => ({ ...calculate(oldState, btn) }));
+    const oldState = ({ ...calculate(obj, btn) });
+    setObj(oldState);
   };
 
   return (

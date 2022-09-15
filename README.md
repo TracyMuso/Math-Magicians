@@ -15,7 +15,7 @@
 
 ## Live Demo 
 
-Click here for the [live demo link](https://elfin-git.github.io/Math-Magicians/build/)
+Live Demo coming soon
 
 ## Getting Started
 
@@ -60,6 +60,7 @@ npm install
 </code>
 
 **Track HTML linter errors run:**
+
 <code>
 npx hint .
 </code>
@@ -70,6 +71,7 @@ npx stylelint "**/*.{css,scss}"
 </code>
 
 **Track JavaScript linter errors run:**
+
 <code>
 npx eslint .
 </code>
