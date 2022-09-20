@@ -5,6 +5,8 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet).
 
+<img src="./img/calcUI.png" width="800" height="500">
+
 
 ## Built With
 
@@ -15,7 +17,7 @@
 
 ## Live Demo 
 
-Live Demo coming soon
+To see the live demo, click [here]( https://tracymuso.github.io/Math-Magicians/)
 
 ## Getting Started
 

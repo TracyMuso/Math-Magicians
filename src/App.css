@@ -2,18 +2,81 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(244, 249, 255);
+  background-color: rgb(240, 233, 158);
   align-items: center;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   left: 50%;
 }
 
+.navbar {
+  width: 100%;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  width: 40%;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  font-size: 18px;
+  color: rgb(39, 38, 38);
+  padding: 1rem;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(3, 130, 18);
+}
+
+.par1 {
+  width: 70%;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.par2 {
+  width: 70%;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.quote {
+  padding: 1rem;
+  position: absolute;
+  top: 8rem;
+  font-size: 16px;
+}
+
 #calculator {
   width: 24rem;
   border: 1px solid rgb(39, 37, 37);
   text-align: center;
-  margin-top: 8rem;
+  margin: 8rem 1rem auto auto;
+}
+
+.mathin {
+  position: absolute;
+  top: 6.5rem;
+  color: rgb(153, 0, 0);
 }
 
 #inputVal {
