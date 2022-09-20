@@ -1,12 +1,22 @@
 /* eslint-disable react/prefer-stateless-function */
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Calculator from './components/calculator';
+import Quote from './components/Quote';
+import Nav from './components/Nav';
+import Home from './components/Home';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <Calculator />
-    );
-  }
-}
+const App = () => {
+  <>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/calculator" element={<Calculator />} />
+      <Route path="/quote" element={<Quote />} />
+      <Route path="*" element={<h1>Note Found</h1>} />
+    </Routes>
+  </>;
+};
+
+export default App;
