@@ -1,13 +1,11 @@
-/* eslint-disable react/prefer-stateless-function */
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import React from 'react';
 import Calculator from './components/calculator';
 import Quote from './components/Quote';
 import Nav from './components/Nav';
 import Home from './components/Home';
 
-const App = () => {
+const App = () => (
   <>
     <Nav />
     <Routes>
@@ -16,7 +14,7 @@ const App = () => {
       <Route path="/quote" element={<Quote />} />
       <Route path="*" element={<h1>Note Found</h1>} />
     </Routes>
-  </>;
-};
+  </>
+);
 
 export default App;
