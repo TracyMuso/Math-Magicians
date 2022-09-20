@@ -5,7 +5,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet).
 
-<img src={./img/calcUI.png} width="800" height="500">
+<img src="./img/calcUI.png" width="800" height="500">
 
 
 ## Built With
