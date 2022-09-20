@@ -24,7 +24,7 @@ const Calculator = () => {
 
   return (
     <>
-      <h3 className="mathin">Lets get Mathin!</h3>
+      <h2 className="mathin">Lets get Mathin!</h2>
       <div id="calculator">
         <div id="inputVal">{ display }</div>
         <div id="row1">
