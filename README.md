@@ -17,7 +17,7 @@
 
 ## Live Demo 
 
-To see the live demo, click [here]( https://tracymuso.github.io/Math-Magicians/)
+To see the live demo, click [here](https://fanciful-pastelito-3e91ef.netlify.app/)
 
 ## Getting Started
 
